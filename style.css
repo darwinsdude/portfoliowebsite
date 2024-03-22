@@ -1,0 +1,23 @@
+header {
+    background-color: rgb(215, 104, 104);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}   
+body {
+    font-size: 1.0em
+}
+
+.directory {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: end;
+
+}
+
+li {
+    margin: 0 10px;
+    font-size: 1.4em;
+
+}
