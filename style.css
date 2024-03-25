@@ -8,11 +8,24 @@ header {
     text-align: center;
     width: 100%;
     margin: auto;
+
+}
+
+.name h1 {
+    color: white;
+    font-size: 2.0rem;
+    margin: .5rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .directory {
     display: flex;
-    list-style-type: none;
+    
     padding: 0;
     justify-content: end;
     
@@ -25,8 +38,10 @@ header {
 }
 
 .directory li {
+    display: inline;
     margin: 0 10px;
     font-size: 1.4em;
+    list-style-type: none;
     
 }
 

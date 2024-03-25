@@ -8,4 +8,10 @@ Array.from(navItems).forEach(navItem => {
 
     // Event listener for mouseout
     anchor.addEventListener('mouseout', () => anchor.style.color = '');
+
+    // Event listener for mousedown
+    anchor.addEventListener('mousedown', () => anchor.style.color = 'rgb(133, 168, 136)');
+
+    // Event listener for mouseup
+    anchor.addEventListener('mouseup', () => anchor.style.color = '');
 });
