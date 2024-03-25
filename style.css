@@ -1,11 +1,13 @@
-header {
-    background-color: rgb(215, 104, 104);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}   
 body {
-    font-size: 1.0em
+    font-size: 1.0rem
+}
+
+header {
+    background-color: rgb(38, 114, 47);
+    padding: .5rem 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
 .directory {
@@ -13,11 +15,24 @@ body {
     list-style-type: none;
     padding: 0;
     justify-content: end;
+    
 
 }
 
-li {
+.directory a {
+    text-decoration: none;
+    color: white;
+}
+
+.directory li {
     margin: 0 10px;
     font-size: 1.4em;
+    
+}
 
+
+.welcome {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
