@@ -8,7 +8,7 @@ header {
     text-align: center;
     width: 100%;
     margin: auto;
-
+    box-shadow: 0.200rem 0.200rem 0.625rem hsla(0, 0%, 0%, 0.5);
 }
 
 .name h1 {
