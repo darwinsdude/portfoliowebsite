@@ -17,6 +17,10 @@ Array.from(navItems).forEach(navItem => {
 });
 
 
+document.getElementById("hamburger-icon").onclick = function() {
+    document.getElementById("myDropdown").classList.toggle("show");
+};
+
 /* Weather App */
 
 // Assign the first element with the class name "weatherForm" to the variable weatherForm.
@@ -92,7 +96,7 @@ function displayWeatherInfo(data){
 
     // Set the content of the created elements.
     cityDisplay.textContent = city;
-    tempDisplay.textContent = `${Math.floor(temp - 273.15) * (9/5) + 32}°F`; // Convert from Kelvin to Fahrenheit.
+    tempDisplay.textContent = `${parseFloat(((temp - 273.15) * (9/5) + 32).toFixed(1))}°F`; // Convert from Kelvin to Fahrenheit.
     humidityDisplay.textContent = `Humidity: ${humidity}%`;
     descDisplay.textContent = description;
     weatherEmoji.textContent = getWeatherEmoji(id);
