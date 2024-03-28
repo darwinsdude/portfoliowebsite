@@ -114,6 +114,7 @@ function displayWeatherInfo(data){
 
 // Define a function to select a weather emoji based on the weather condition id.
 function getWeatherEmoji(weatherId){
+    
     // Use a switch statement to select the appropriate emoji.
     switch(true){
         case (weatherId >= 200 && weatherId < 300):
@@ -127,7 +128,9 @@ function getWeatherEmoji(weatherId){
         case (weatherId >= 700 && weatherId < 800):
             return "😶‍🌫️"; // Atmosphere
         case (weatherId === 800):
-            return "☀️";
+            return '☀️';
+        case (weatherId > 800 && weatherId < 805):
+            return "☁️";
     }
 }
 
