@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxx's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
     
 </head>
 <body>
     <header>
         <div class="container">
             <div class="name">
-                <h1>Maxx's Portfolio</h1>
+                <h1>Weather App</h1>
             </div>
             <div class="dropdown">
                 <button id="hamburger-icon">☰</button>
                 <div class="dropdown-content" id="myDropdown">
-                    <a href="index.html">Home</a>
-                    <a href="weatherapp.html">Weather App</a>
+                    <a href="../index.html">Home</a>
+                    <a href="/weatherapp/weatherapp.html">Weather App</a>
                     <a href="project2.html">Project #2</a> <!-- Update href attribute -->
                     <a href="project3.html">Project #3</a> <!-- Update href attribute -->
                     <a href="contact.html">Contact</a> <!-- Update href attribute -->
@@ -26,15 +26,21 @@
             </div>
         </div>
     </header>
-<div class="welcome">
-    <h1>Hi! Welcome to my portfolio website</h1>
-    <p>The purpose of this website is to showcase my skills as a self-taught programmer</p>
-    <p>Feel free to look around and check out my projects</p>
-    <p>Thank you for visiting!</p>
-    <p>plz hire me.</p>
+    <br>
+<div class="greeting">
+    <h1>Hi! Welcome to my weather app</h1>
+    <p>This app uses the OpenWeather API to get the current weather of a city.</p>
+    <p>Enter the name of a city in the search bar to get the current weather.</p>
+    <br>
 </div>
-<script src="main.js"></script>
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter city">
+        <button type="submit" class="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none">
+        
+    </div>
+<script src="weather.js"></script>
 </body>
 </html>
-
-
