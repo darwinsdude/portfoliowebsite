@@ -1,5 +1,5 @@
 function rollDice() {
-    const numOfDice = document.getElementById('numOfDice').value;
+    const numOfDice = document.getElementById('numOfDice').value; //what is the number of dice we need to roll?
     const diceResult = document.getElementById('diceResult');
     const diceImages = document.getElementById('diceImages');
     const values = [];
@@ -11,7 +11,6 @@ function rollDice() {
         images.push(`<img src="images/${value}.png">`);
     }
     diceResult.textContent = `dice: ${values.join(', ')}`;
-    
+    diceImages.innerHTML = images.join('');
 }
 
-// Display the dice values and images.

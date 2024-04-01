@@ -3,17 +3,19 @@
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    
 }
 
 button{
     font-size: 1.5rem;
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.625rem;
     border: none;
     background-color: hsla(218, 44%, 40%, 0.933);
     color:white;
     font-weight: bold;
     cursor: pointer;
+    
 }
 
 button:hover{
@@ -26,7 +28,25 @@ button:active{
 
 input{
     font-size: 2rem;
-    width: 150px;
+    width: 10rem;
     font-weight: bold;
     text-align: center;
 }
+
+#diceResult{
+    margin: 1.5rem;
+}
+
+#diceImages{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#diceImages img{
+    height: 6rem;
+    width: 6rem;
+    margin: 0.5rem;
+}
+
